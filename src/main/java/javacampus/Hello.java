@@ -2,7 +2,23 @@ package javacampus;
 
 import org.w3c.dom.ls.LSOutput;
 
+
+
+
+
 public class Hello {
+
+    class test{
+        int booknum = 100;
+        int stnum = 22;
+
+        String sdf = "1명의 학생당 "+ (int)(booknum/stnum)+"권씩 가질 수 있습니다. " +
+                "\n남아있는 책은 " + (booknum%stnum)+ "권 입니다. ";
+        String fdfa = "나워줄 수 없습니다";
+
+    }
+
+
     public static void main(String[] args) {
 
         System.out.println("오늘부터 ai플랫폼 활용      웹서비스개발과정을 시작하였습니다. " +
@@ -93,16 +109,20 @@ public class Hello {
         System.out.println("------여기부터 TEST 시작---------");
 
 
-        int sample = 999;
+        int sample = 123;
 
         System.out.println(((int)(sample/100))*100);
 
+        //int 끼리 나누기 하면 int 만 나옴. 123/100 = 1 // 즉, 강제형변환 (int) 를 할 필요가 없음
+
+
+
 //2
-        int booknum = 97;
+        int booknum = 98;
         int stnum = 12;
 /*
 
-               if (booknum>stnum) {
+               if (booknum>=stnum) {
                 System.out.println("1명의 학생당 "+ (int)(booknum/stnum)+"권씩 가질 수 있습니다.");
                 System.out.println("남아있는 책은 " + (booknum%stnum)+ "권 입니다.");}
                else {
@@ -111,9 +131,13 @@ public class Hello {
 */
 
 
-                String BB = booknum>stnum ?
-                       "1명의 학생당 "+ (int)(booknum/stnum)+"권씩 가질 수 있습니다. " +
-                               "\n남아있는 책은 " + (booknum%stnum)+ "권 입니다. ":
+        int divide = booknum/stnum;
+        int remainder = booknum%stnum;
+
+
+            String BB = (booknum>=stnum) ?
+                       "1명의 학생당 "+ divide +"권씩 가질 수 있습니다. " +                //형변환 필요없다
+                               "\n남아있는 책은 " + remainder + "권 입니다. ":
                        "나워줄 수 없습니다";
 
                   System.out.println(BB);
@@ -121,18 +145,19 @@ public class Hello {
 
 
 
+
     //3
-               int up = 10;
+               int up = 11;
                int down = 15;
                int height = 12;
 
-        System.out.println((double)((up+down)*height));
+        System.out.println((double)((up+down)*height/1.1));
 
 //4
         int input=21;
            String S = input %3 == 0 && input %7 == 0 ?
-                "3의 배수이면서 7의 배수이다" :
-                "3의 배수이면서 7의 배수가 아니다";
+                input + " 은 3의 배수이면서 7의 배수이다" :
+                input + " 은 3의 배수이면서 7의 배수가 아니다";
 
         System.out.println(S);
 
@@ -146,6 +171,16 @@ public class Hello {
         bbb = 10;
         System.out.println(bbb);
 
+        int qa = 10;
+        int qb = 20;
+        int c = qa;
+        qa = qb;
+        System.out.println("답"+c+"qa는"+qa);
+        int cc = qa;
+        System.out.println("cc" + cc);
+
+
+
 //6
         String name = "이자바";
         int java = 100;
@@ -154,7 +189,7 @@ public class Hello {
 
         int sum = java + db + Spring;
 
-        double avg = (sum)/3;
+        double avg = ((sum)/(double)3);
 
         System.out.println(sum);
         System.out.println(avg);

@@ -209,46 +209,100 @@ public class cam2 {
         }
 
 
+
+
+
+
+
         //Dicetest
         // 주사위 2개 던져서 각 눈의 숫자 출력, 합 출력, 이 때, 눈의 합이 5가 되면 중단하기.
 
+//내가 만든 do wile 문
 
-        int dice1 = (int) (Math.random() * 6) + 1;
-        int dice2 = (int) (Math.random() * 6) + 1;
-
+      /*  int dice1;
+        int dice2;
+        int ssum;
         do {
-            int ssum = dice1 + dice2;
-
-            if (dice1 + dice2 == 5) {
-                System.out.println("첫주사위 : "+dice1 +", 두번째주사위 :  "+ dice2+", GAME OVER!");
-            }
-
-            System.out.println("첫주사위 : " + dice1 + ", 두번째주사위 : " + dice2 + ", 합 = " + ssum);
-
 
             dice1 = (int) (Math.random() * 6) + 1;
             dice2 = (int) (Math.random() * 6) + 1;
 
+            ssum = dice1 + dice2;
+
             if (dice1 + dice2 == 5) {
                 System.out.println("첫주사위 : "+dice1 +", 두번째주사위 :  "+ dice2+", 합 = 5 GAME OVER!");
             }
-        } while ((dice1+dice2)!=5);
+            else {System.out.println("첫주사위 : " + dice1 + ", 두번째주사위 : " + dice2 + ", 합 = " + ssum);}
 
 
-//1과 100사이의 수중 3배수의 총합 출력하기
+        } while (ssum != 5);
+*/
+
+        System.out.println("============================");
+
+        //true 로 주고 break 활용하기
+
+        while (true){
+             int dice1 = (int) (Math.random() * 6) + 1;
+             int dice2 = (int) (Math.random() * 6) + 1;
+             int ssum = dice1 + dice2;
 
 
-        int gdsum = 0;
-        int gd = 1;
-
-        while (gd<100) {
-            if (gd % 3 == 0) {
-                gdsum = gdsum + gd;
+            if (dice1 + dice2 == 5) {
+                System.out.println("첫주사위 : "+dice1 +", 두번째주사위 :  "+ dice2+", 합 = 5 GAME OVER!");break;
             }
-            gd++;
+            else {System.out.println("첫주사위 : " + dice1 + ", 두번째주사위 : " + dice2 + ", 합 = " + ssum);}
         }
 
-        System.out.println(gdsum);
+
+        // 그냥 while 문 만으로는 만들기가 어렵네
+
+/*
+        while (true){
+            int dice3 = (int) (Math.random() * 6) + 1;
+            int dice4 = (int) (Math.random() * 6) + 1;
+
+            int dicesum = dice3 + dice4;
+
+
+            if (dicesum == 5) {
+                System.out.println( dice3 + " + " + dice4 + " = " + dicesum+ "Gameover");break;}
+            else {
+                System.out.println( dice3 + " + " + dice4 + " = " + dicesum);
+            }
+
+
+        }
+*/
+
+
+
+
+
+        /*
+        while (true) {
+
+
+            if(sum != 5){}
+            else{break;}
+        }
+
+        System.out.println();
+
+
+
+        while (true) {
+
+
+            if(sum == 5){
+                System.out.println("끝");
+                break;
+            }
+        }
+*/
+
+
+
 
 
 

@@ -25,7 +25,7 @@ class Person{
 
     String name;
     int age;
-    static String nation;
+    static String nation = "대한민국";
 }
 
 public class Static {

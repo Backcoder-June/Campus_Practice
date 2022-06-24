@@ -14,7 +14,7 @@ public class TwoArrayTest {
         for (int i =0; i<array2.length; i++){
 
             int sum = 0;
-            int avg = 0;
+            double avg = 0;
 
             System.out.println("학생이름 : "+ args[i]);
 
@@ -22,16 +22,18 @@ public class TwoArrayTest {
 
             int subject_num = array2[i].length;
 
+            System.out.print("점수 : ");
             for (int j =0; j<subject_num; j++) {
 
                 int grade = array2[i][j];
                 
                 grade = (int)(Math.random()*100)+1;
-                System.out.print("점수 : {" + grade + "}\t");
+
+
+                System.out.print( grade + " ");
 
                 sum += grade;
-                avg = sum / subject_num;
-
+                avg = sum / (double)subject_num;
             }
             System.out.println("/ 총합 : "+ sum +" /  평균 : "+ avg );
 

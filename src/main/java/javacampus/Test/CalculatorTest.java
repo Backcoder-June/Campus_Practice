@@ -19,7 +19,8 @@ class Calculator{
             result = this.num1 * this.num2; }
         else if (this.operator.equals("/")){
             result = this.num1 / this.num2; }
-
+        else {
+            System.out.println("인식할 수 없습니다.");return;}
         System.out.println(this.num1 + this.operator + this.num2 + " = " + result + " 입니다.");}
 
 

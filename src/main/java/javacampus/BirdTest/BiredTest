@@ -1,0 +1,30 @@
+
+name legs length 공통 데이터
+fly sing setName, print(이름출력) 메소드 공통
+
+Duck - web(물갈퀴수) , swim 메소드
+Sparrow - friend , makeFriend메소드( friend 변수를 "허수아비" 로 초기화 하고 출력)
+
+
+play bird 실행결과 -
+[PlayBird 실행결과]
+오리(꽥꽥이)는 날지 않습니다.
+오리(꽥꽥이)가 소리내어 웁니다.
+오리(꽥꽥이)가 2개의 물갈퀴로 수영합니다.
+오리의 이름은 꽥꽥이 입니다.
+참새(짹짹)가 날아다닙니다.
+참새(짹짹)가 소리내어 웁니다.
+참새의 친구는 허수아비입니다.
+참새의 이름은 짹짹 입니다.
+
+class PlayBird {
+public static void main(String args[] ){
+ Duck 클래스 타입의 객체의 fly 메서드 호출
+ Duck 클래스 타입 객체의 sing 메서드 호출
+ Duck 클래스 타입 객체의 swim 메서드 호출
+Duck 클래스 타입 객체의 print 메서드 호출
+Sparrow 클래스 타입의 객체의 fly 메서드 호출
+ Sparrow 클래스 타입 객체의 sing 메서드 호출
+ Sparrow 클래스 타입 객체의 makeFriend 메서드 호출
+Sparrow 클래스 타입 객체의 print 메서드 호출
+}

@@ -10,7 +10,7 @@ public class BookMgr {
 
 
 
-    Book[] booklist;                           // Book 객체를 여러개 넣을 수 있는 배열 booklist ( 멤버변수 )
+     Book[] booklist;                           // Book 객체를 여러개 넣을 수 있는 배열 booklist ( 멤버변수 )
 
     public BookMgr(Book[] booklist){           // booklist를 초기화하는 생성자
         this.booklist = booklist; }
